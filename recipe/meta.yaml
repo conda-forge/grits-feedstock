@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python>=3.10
+    - python >=3.10
     - pip
   run:
-    - python=3.10
+    - python >=3.10
     - ele
-    - freud>=2.13.1
-    - gsd>=3.0
+    - freud >=2.13.1
+    - gsd >=3.0
     - mbuild
     - numpy
     - openbabel
