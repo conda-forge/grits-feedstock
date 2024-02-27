@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.8
     - ele
-    - freud >=2.13.1
+    - freud =2.13.2
     - gsd >=3.0
     - mbuild
     - numpy
