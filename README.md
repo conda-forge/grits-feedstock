@@ -156,5 +156,5 @@ Feedstock Maintainers
 
 * [@chrisjonesBSU](https://github.com/chrisjonesBSU/)
 * [@jennyfothergill](https://github.com/jennyfothergill/)
-* [@marjanAlbouye](https://github.com/marjanAlbouye/)
+* [@marjanAlbouye](https://github.com/marjanalbooyeh)
 
