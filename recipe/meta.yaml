@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cmelab/grits/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: dc71bb544df9067fe11e62d419b84621e8ca30017cdb198fd80819c8ec9d40dc
+  sha256: dc71bb544df9067fe11e62d419b84621e8ca30017cdb198fd80819c8ec9d40dc 
 
 build:
   noarch: python
@@ -20,6 +20,8 @@ requirements:
     - pip
   run:
     - python >=3.8
+    - cmeutils >=1.2.0
+    - rowan
     - ele
     - freud =2.13.2
     - gsd >=3.0
