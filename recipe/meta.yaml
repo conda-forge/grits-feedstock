@@ -16,7 +16,7 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.8, <3.12
     - pip
   run:
     - python >=3.8
@@ -25,7 +25,7 @@ requirements:
     - ele
     - freud =2.13.2
     - gsd >=3.0
-    - mbuild
+    - mbuild >=0.17.0
     - numpy
     - openbabel
     - rdkit
