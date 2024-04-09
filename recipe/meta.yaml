@@ -1,5 +1,5 @@
 {% set name = "grits" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cmelab/grits/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: dc71bb544df9067fe11e62d419b84621e8ca30017cdb198fd80819c8ec9d40dc 
+  sha256: c779676e887e8106740b4b4add1b3f36d174d77a7b7d55d90a78cd054139282b 
 
 build:
   noarch: python
