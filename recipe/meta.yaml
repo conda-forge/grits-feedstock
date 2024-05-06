@@ -1,5 +1,5 @@
 {% set name = "grits" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/cmelab/grits/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: c779676e887e8106740b4b4add1b3f36d174d77a7b7d55d90a78cd054139282b 
+  sha256: b6213f17bab4ef4352ff5838c92fb8be905589d6f85e1d81190ad135a5d5346b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0 
+  number: 0
 
 requirements:
   host:
@@ -28,7 +28,6 @@ requirements:
     - mbuild >=0.17.0
     - numpy
     - openbabel
-    - rdkit
     - py3Dmol
 
 test:
@@ -57,4 +56,3 @@ extra:
     - marjanalbooyeh
     - jennyfothergill
     - chrisjonesBSU
-    - marjanalbouye
