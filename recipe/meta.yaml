@@ -28,7 +28,6 @@ requirements:
     - mbuild >=0.17.0
     - numpy
     - openbabel
-    - rdkit
     - py3Dmol
 
 test:
