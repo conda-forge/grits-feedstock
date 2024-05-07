@@ -36,7 +36,7 @@ test:
   requires:
     - pip
   commands:
-    - [[ "$(python -c 'import grits; print(grits.__version__)')" == {{ version }} ]] || return 1
+    - python run_test.py {{ version }}
 
 about:
   home: https://github.com/cmelab/grits
