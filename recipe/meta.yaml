@@ -6,18 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/cmelab/grits/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b6213f17bab4ef4352ff5838c92fb8be905589d6f85e1d81190ad135a5d5346b
+  git_url: https://github.com/cmelab/{{ name }}.git
+  git_rev: v{{ version }}
+  git_depth: -1
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - python >=3.8, <3.12
     - pip
+    - versioningit
   run:
     - python >=3.8
     - cmeutils >=1.2.0
@@ -35,6 +37,8 @@ test:
     - grits
   requires:
     - pip
+  commands:
+    - python run_test.py {{ version }}
 
 about:
   home: https://github.com/cmelab/grits
