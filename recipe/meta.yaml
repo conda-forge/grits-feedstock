@@ -35,6 +35,8 @@ test:
     - grits
   requires:
     - pip
+  commands:
+    - python run_test.py {{ version }}
 
 about:
   home: https://github.com/cmelab/grits
