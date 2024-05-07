@@ -8,6 +8,7 @@ def test_version():
         target_version=sys.argv[1]
     except IndexError:
         return
+    print(grits.__version__)
     assert grits.__version__ == target_version
 
 if __name__ == "__main__":
