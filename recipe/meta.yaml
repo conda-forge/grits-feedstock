@@ -6,8 +6,9 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/cmelab/grits/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b6213f17bab4ef4352ff5838c92fb8be905589d6f85e1d81190ad135a5d5346b
+  git_url: https://github.com/cmelab/{{ name }}.git
+  git_rev: v{{ version }}
+  git_depth: -1
 
 build:
   noarch: python
