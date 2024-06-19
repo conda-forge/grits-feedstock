@@ -1,5 +1,5 @@
 {% set name = "grits" %}
-{% set version = "0.4.2" %}
+{% set version = "0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -13,19 +13,19 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0 
 
 requirements:
   host:
-    - python >=3.8, <3.12
+    - python >=3.8
     - pip
     - versioningit
   run:
     - python >=3.8
-    - cmeutils >=1.2.0
+    - cmeutils >=1.3.0
     - rowan
     - ele
-    - freud =2.13.2
+    - freud >=3.0
     - gsd >=3.0
     - mbuild >=0.17.0
     - numpy
